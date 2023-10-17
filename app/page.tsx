@@ -1,7 +1,13 @@
+import { ThemeProvider } from "@/context/ThemeContext";
+import DarkModeToggle from "./components/darkmodetoggle/DarkModeToggle";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Traffic Rules</h1>
-    </main>
+    <ThemeProvider>
+      <main>
+        <DarkModeToggle />
+        <h1>Traffic Rules</h1>
+      </main>
+    </ThemeProvider>
   );
 }
